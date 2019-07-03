@@ -6,5 +6,5 @@ from django.conf.urls import include, url
 urlpatterns = [
     path('register/', user_views.register, name='register'),
     path('admin/', admin.site.urls),
-    path('', include('main.urls/views')),
+    path('', 'about/', include('main.urls')),
 ]
