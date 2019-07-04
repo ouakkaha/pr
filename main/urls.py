@@ -6,6 +6,6 @@ from main.views import blog, about
 from django.conf.urls import include, url
 
 urlpatterns = [
-    path('about/', 'main.views.about', name='about'),
-    path('', 'main.views.blog', name='blog'),
+    path('about/', about, name='about'),
+    path('', blog, name='blog'),
 ]
